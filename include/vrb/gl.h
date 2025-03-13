@@ -14,9 +14,9 @@
 #  include <OpenGL/gl3.h>
 #  include <OpenGL/gl3ext.h>
 #else
-#  define GL_GLEXT_PROTOTYPES
-#  include <GL/gl.h>
-#  include <GL/glext.h>
+#  include <GLES3/gl3.h>
+#  include <GLES3/gl3ext.h>
+#  include <GLES2/gl2ext.h> // Need for GL_TEXTURE_EXTERNAL_OES
 #endif
 
 #if !defined(GL_APIENTRY)
